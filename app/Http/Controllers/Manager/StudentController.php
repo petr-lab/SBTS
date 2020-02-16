@@ -55,7 +55,7 @@ class StudentController extends Controller
         $student->card_code = $request->input('card_code');
         $student->location= $request->input('location');
         $student->parent_email = $request->input('parent_email');
-        $student->gender = $request->input('gender');;
+        $student->gender = $request->input('gender');
         $student->save(); 
         return redirect()->route('student.index')->with('info','student Added Successfully');
     }
@@ -108,7 +108,7 @@ class StudentController extends Controller
         $student->card_code = $request->input('card_code');
         $student->location= $request->input('location');
         $student->parent_email = $request->input('parent_email');
-        $student->gender = $request->input('gender');;
+        $student->gender = $request->input('gender');
         $student->update(); 
         return redirect()->route('student.index')->with('info','student Updated Successfully'); 
     }
